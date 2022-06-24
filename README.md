@@ -1,8 +1,12 @@
-# Advanced Sample Hardhat Project
+# README
+
+## Advanced Sample Hardhat Project
 
 ```shell
-npx hardhat run --network mumbai scripts/deploy.js
-npx hardhat run --network mumbai scripts/mint.js
+npx hardhat run --network mumbai scripts/deploy-ethgx.js
+npx hardhat run --network mumbai scripts/mint-ethgx.js
+
+npx hardhat run --network mumbai scripts/deploy-erc20.js
 ```
 
 ```shell
@@ -24,7 +28,7 @@ npx solhint 'contracts/**/*.sol'
 npx solhint 'contracts/**/*.sol' --fix
 ```
 
-# Etherscan verification
+## Etherscan verification
 
 To try out Etherscan verification, you first need to deploy a contract to an Ethereum network that's supported by Etherscan, such as Ropsten.
 
@@ -37,5 +41,5 @@ hardhat run --network ropsten scripts/deploy.js
 Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_ADDRESS` in this command:
 
 ```shell
-npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
+npx hardhat verify --contract contracts/BTFDCAToken.sol:BTFDCAToken --network mumbai 0x86d0773b8053721301f6aa066143d6191ef5613c
 ```
