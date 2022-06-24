@@ -1,12 +1,19 @@
-# README
+# Public Minting
+
+Ever needed some ERC20 tokens to test things with, but tired of looking for faucets?
+
+Well, how about some tokens that you can just mint by yourself?
+That's what this is all about.
+
+There are examples for regular ERC20 tokens (based on OpenZeppelin's contract), and Superfluid Pure Supertokens.
 
 ## Advanced Sample Hardhat Project
 
 ```shell
+npx hardhat run --network mumbai scripts/deploy-erc20.js
+
 npx hardhat run --network mumbai scripts/deploy-ethgx.js
 npx hardhat run --network mumbai scripts/mint-ethgx.js
-
-npx hardhat run --network mumbai scripts/deploy-erc20.js
 ```
 
 ```shell
