@@ -48,5 +48,5 @@ hardhat run --network ropsten scripts/deploy.js
 Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_ADDRESS` in this command:
 
 ```shell
-npx hardhat verify --contract contracts/BTFDCAToken.sol:BTFDCAToken --network mumbai 0x86d0773b8053721301f6aa066143d6191ef5613c
+npx hardhat verify --contract contracts/StableToken.sol:StableToken --network mumbai 0xf3978Cd0b517910D55af7bA7d1278C55BcFB4a1A
 ```

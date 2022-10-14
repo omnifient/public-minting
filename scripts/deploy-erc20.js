@@ -2,7 +2,7 @@ const hre = require("hardhat");
 require("dotenv").config();
 
 async function main() {
-  const ERC20_CONTRACT_NAME = "BTFDCAToken";
+  const ERC20_CONTRACT_NAME = "StableToken";
 
   const network = await hre.ethers.provider.getNetwork();
   console.log("deploying to", network.name, network.chainId);
@@ -23,7 +23,7 @@ async function main() {
 
   console.log("mint something");
   const ret = await tokenContract.publicMint(
-    hre.ethers.BigNumber.from("1000000000000000000")
+    hre.ethers.BigNumber.from("1000000000000000000000000")
   );
   console.log("some return value", ret);
 }
